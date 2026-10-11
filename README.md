@@ -9,6 +9,7 @@ https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-componen
 • ADC: Texas Instruments ADC124S051CIMM/NOPB SPI ADC. Only one analogue input is
 required.
 https://www.ti.com/product/ADC124S051#params
+Operating temperature range -40:85, sensor has to measure range 0-100, caution about temperature on ADC.
 
 • Microcontroller: ESP32-S3-WROOM-1U & ISO1042 CAN Interface, already installed on
 the CAN Data node.
