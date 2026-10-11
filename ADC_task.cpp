@@ -19,7 +19,9 @@ bool adc_read(float &temperature_c)
     
     //float VOut = 5.25 * raw_adc / 4095.0
     float RThermistor = RConstant * 4095 / raw_adc - RConstant;
-    float temperature_c = pow(((log(RThermistor / RThermistor25Baseline) / BetaConstant2585) + pow(ThermistorBaselineTempKelvin, -1)), -1) - 273.15;
+    temperature_c = pow(((log(RThermistor / RThermistor25Baseline) / BetaConstant2585) + pow(ThermistorBaselineTempKelvin, -1)), -1) - 273.15;
+
+    //Maths code tested seperately outputs expected value for different raw_adcs.
 
     return std::isfinite(temperature_c);
 }
