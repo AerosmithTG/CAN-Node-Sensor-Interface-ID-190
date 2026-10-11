@@ -8,9 +8,11 @@ https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-componen
 
 • ADC: Texas Instruments ADC124S051CIMM/NOPB SPI ADC. Only one analogue input is
 required.
+https://www.ti.com/product/ADC124S051#params
 
 • Microcontroller: ESP32-S3-WROOM-1U & ISO1042 CAN Interface, already installed on
 the CAN Data node.
+https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.html
 
 For this exercise, transmit temperature using the following CAN message format:
 
