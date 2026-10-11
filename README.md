@@ -5,6 +5,7 @@ The main components for your design are listed below:
 • Temperature sensor: NTCS0805E3103JHT SMD (0805) 10k NTC Thermistor, connected to
 a thermal source ranging from 0°C to 100°C.
 https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/NTCS0805E3103JHT/2237370
+https://zentriad.com/how-to-read-an-ntc-thermistor-datasheet-a-field-guide-for-engineers/
 
 • ADC: Texas Instruments ADC124S051CIMM/NOPB SPI ADC. Only one analogue input is
 required.
