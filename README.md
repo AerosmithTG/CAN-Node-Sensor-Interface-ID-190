@@ -1,5 +1,16 @@
 # Start here
 
+The main components for your design are listed below:
+
+• Temperature sensor: NTCS0805E3103JHT SMD (0805) 10k NTC Thermistor, connected to
+a thermal source ranging from 0°C to 100°C.
+
+• ADC: Texas Instruments ADC124S051CIMM/NOPB SPI ADC. Only one analogue input is
+required.
+
+• Microcontroller: ESP32-S3-WROOM-1U & ISO1042 CAN Interface, already installed on
+the CAN Data node.
+
 For this exercise, transmit temperature using the following CAN message format:
 
 • Standard 11-bit CAN identifier: 0x600.
