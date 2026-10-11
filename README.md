@@ -1,5 +1,15 @@
 # Start here
 
+For this exercise, transmit temperature using the following CAN message format:
+• Standard 11-bit CAN identifier: 0x600.
+• Payload length: 2 bytes.
+• Temperature encoding: Signed 16-bit integer in tenths of a degree Celsius.
+• Byte order: Most significant byte first.
+For example, 25.0°C should be represented by the integer 250, giving payload bytes 0x00 and 0xFA.
+Additionally, you must use the Manchester Stinger Motorsports CAN Library for its packing and
+sending functions. The required files can be found at this link:
+https://github.com/ManchesterStingerMotorsports/johnsonnode/blob/main/libraries/MSM_CAN/MSM_CAN.hpp
+
 Setup, timing and reading the sensor are already done for you.
 
 - `ADC_task.cpp`: convert `raw_adc` (0 to 4095) into `temperature_c` using your circuit and thermistor data.
