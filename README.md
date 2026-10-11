@@ -15,6 +15,7 @@ Additionally, you must use the Manchester Stinger Motorsports CAN Library for it
 sending functions. The required files can be found at this link:
 
 https://github.com/ManchesterStingerMotorsports/johnsonnode/blob/main/libraries/MSM_CAN/MSM_CAN.hpp
+-Files actually found in "https://github.com/ManchesterStingerMotorsports/johnson-node/tree/main/libraries/MSM_CAN"
 
 Setup, timing and reading the sensor are already done for you.
 
@@ -23,6 +24,7 @@ Setup, timing and reading the sensor are already done for you.
 
 CAN is already initialised. Use the packing helpers and `send_msg()` described
 in the [MSM_CAN API](https://github.com/ManchesterStingerMotorsports/johnson-node/blob/main/libraries/MSM_CAN/MSM_CAN.hpp).
+-Files actually found in "https://github.com/ManchesterStingerMotorsports/johnson-node/tree/main/libraries/MSM_CAN"
 For temperature, multiply degrees C by 10: **25.0 C -> 250**.
 Complete the marked section in each task.
 
