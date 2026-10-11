@@ -14,12 +14,12 @@ bool adc_read(float &temperature_c)
     //Circuit & Thermistor Constants
     const float RConstant = 10000.0, RThermistor25Baseline = 10000.0;
     const float BetaConstant2585 = 3940.0;
-    const float ThermistorBaselineTempKelvin = 25.0 + 273.15
+    const float ThermistorBaselineTempKelvin = 25.0 + 273.15;
     
     
     //float VOut = 5.25 * raw_adc / 4095.0
     float RThermistor = RConstant * 4095 / raw_adc - RConstant;
-    float temperature_c = pow(((log(RThermistor / RThermistor25Baseline) / BetaConstant2585) + pow(ThermistorBaselineTempKelvin, -1)), -1) - 273.15
+    float temperature_c = pow(((log(RThermistor / RThermistor25Baseline) / BetaConstant2585) + pow(ThermistorBaselineTempKelvin, -1)), -1) - 273.15;
 
     return std::isfinite(temperature_c);
 }
