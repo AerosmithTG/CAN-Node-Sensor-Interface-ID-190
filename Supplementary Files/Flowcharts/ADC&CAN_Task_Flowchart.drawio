@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="wuLxBNlfJOTC6EdJLoa4">
-    <mxGraphModel dx="595" dy="325" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -65,8 +65,11 @@
         <mxCell id="55YLxKCbnLsnREW87Oup-26" edge="1" parent="1" source="55YLxKCbnLsnREW87Oup-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="55YLxKCbnLsnREW87Oup-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="55YLxKCbnLsnREW87Oup-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" value="Round temperature to 1 decimal place and multiply by 10 for CAN prep" vertex="1">
-          <mxGeometry height="60" width="150" x="480" y="240" as="geometry" />
+        <mxCell id="x72biOxRKjwQyE4gF1Fp-2" edge="1" parent="1" source="55YLxKCbnLsnREW87Oup-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="x72biOxRKjwQyE4gF1Fp-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="55YLxKCbnLsnREW87Oup-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" value="Initialise signed 16 bit integer variable temperature_10x = float temperature_c * 10. Rounds decimal down." vertex="1">
+          <mxGeometry height="80" width="160" x="480" y="239.31" as="geometry" />
         </mxCell>
         <mxCell id="55YLxKCbnLsnREW87Oup-49" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="86" width="166.45999999999998" x="240" y="30" as="geometry" />
@@ -88,6 +91,15 @@
         </mxCell>
         <mxCell id="55YLxKCbnLsnREW87Oup-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;5.25 &amp;amp; VIn are redundant but help understanding.&lt;/font&gt;" vertex="1">
           <mxGeometry height="34.39" width="99.3" x="204" y="283" as="geometry" />
+        </mxCell>
+        <mxCell id="x72biOxRKjwQyE4gF1Fp-4" edge="1" parent="1" source="x72biOxRKjwQyE4gF1Fp-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="x72biOxRKjwQyE4gF1Fp-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x72biOxRKjwQyE4gF1Fp-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" value="Use packing helper function pack_i16() to pack temperature_10x into data frame as 2 unsigned 8 bit integers." vertex="1">
+          <mxGeometry height="80" width="160" x="480" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="x72biOxRKjwQyE4gF1Fp-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" value="Send data frame to CAN module using function send_msg()." vertex="1">
+          <mxGeometry height="80" width="160" x="480" y="481" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

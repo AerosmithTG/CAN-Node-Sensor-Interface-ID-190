@@ -21,10 +21,10 @@ void can_send_temperature(float temperature_c)
     //{
     //    pack_u16(data, index, static_cast<uint16_t>(value));
     //}
-    pack_i16(frame.data, 1, temperature_10x);
-    send_msg(frame);
+    MSM_CAN::pack_i16(frame.data, 1, temperature_10x);
+    MSM_CAN::send_msg(frame);
     // Could be better to use schedule() instead of send_msg() as this would allow us to send the data periodically every second (as the brief states)
-    
+
 
     // your code goes here:
     // 1. Use the MSM_CAN packing helper to fill frame.data.
