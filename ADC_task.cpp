@@ -31,3 +31,5 @@ bool adc_read(float &temperature_c)
 
     return std::isfinite(temperature_c);
 }
+
+//File size is 2KB, should fit easily within Microcontroller's ROM capacity of 384KB.
