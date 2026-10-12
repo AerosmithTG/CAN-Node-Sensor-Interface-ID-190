@@ -98,8 +98,14 @@
         <mxCell id="x72biOxRKjwQyE4gF1Fp-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" value="Use packing helper function pack_i16() to pack temperature_10x into data frame as 2 unsigned 8 bit integers." vertex="1">
           <mxGeometry height="80" width="160" x="480" y="360" as="geometry" />
         </mxCell>
+        <mxCell id="x72biOxRKjwQyE4gF1Fp-6" edge="1" parent="1" source="x72biOxRKjwQyE4gF1Fp-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="x72biOxRKjwQyE4gF1Fp-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="x72biOxRKjwQyE4gF1Fp-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" value="Send data frame to CAN module using function send_msg()." vertex="1">
           <mxGeometry height="80" width="160" x="480" y="481" as="geometry" />
+        </mxCell>
+        <mxCell id="x72biOxRKjwQyE4gF1Fp-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="End - Temperature transmitted to CAN" vertex="1">
+          <mxGeometry height="40" width="120" x="280" y="521" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
