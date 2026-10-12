@@ -1790,6 +1790,16 @@
 		)
 		(uuid "123297f4-05a4-4d98-8e28-040630be5eb8")
 	)
+	(text "Pins correspond to correct \nGPIO numbers from datasheet \nand as specified in framework.cpp."
+		(exclude_from_sim no)
+		(at 181.356 89.154 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+		)
+		(uuid "131a3b97-dab3-4f8d-975c-9be3c87c267a")
+	)
 	(text "Voltage divider to find the \nconstant resistor's share of voltage."
 		(exclude_from_sim no)
 		(at 135.382 72.136 0)
@@ -1890,9 +1900,9 @@
 		)
 		(uuid "c2de4d60-f67a-4112-ab62-9c3a34d85d01")
 	)
-	(text "IO1 recommended\nby datasheet for SPI"
+	(text "IO pin recommended\nby datasheet for SPI"
 		(exclude_from_sim no)
-		(at 194.056 62.738 0)
+		(at 181.864 72.898 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1929,6 +1939,18 @@
 		(uuid "7e43c187-31a5-4529-b1f2-616a8098603f")
 	)
 	(junction
+		(at 222.25 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8c2ab9d-31c5-4576-bcd2-20dd295dc905")
+	)
+	(junction
+		(at 215.9 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3496f5a-a4ae-41d3-bdec-42fe25e1ffe2")
+	)
+	(junction
 		(at 120.65 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1947,6 +1969,16 @@
 			(type default)
 		)
 		(uuid "027d7b90-6a3f-4c67-8631-caa4bdd4fd1a")
+	)
+	(wire
+		(pts
+			(xy 215.9 40.64) (xy 215.9 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "069e9d63-7e31-452f-a580-1486ccc35f95")
 	)
 	(wire
 		(pts
@@ -1988,6 +2020,36 @@
 		)
 		(uuid "10f75e35-75f9-4ccd-8295-eb45ee0de0e6")
 	)
+	(wire
+		(pts
+			(xy 193.04 88.9) (xy 200.66 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12c14b6e-b3ed-4911-b9ca-9fd9a6fd9576")
+	)
+	(wire
+		(pts
+			(xy 179.07 52.07) (xy 193.04 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13551354-0058-4063-a9b4-734a0bf3f454")
+	)
+	(wire
+		(pts
+			(xy 187.96 86.36) (xy 200.66 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15985612-4632-4f3d-b988-f74aa78f8e40")
+	)
 	(polyline
 		(pts
 			(xy 177.8 54.356) (xy 179.07 54.356)
@@ -1998,6 +2060,26 @@
 		)
 		(uuid "16b32bc4-fb42-413b-bb60-0172443a9b5f")
 	)
+	(wire
+		(pts
+			(xy 215.9 40.64) (xy 222.25 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2222509f-c1dd-4896-afd9-c000c2845bfd")
+	)
+	(wire
+		(pts
+			(xy 163.83 52.07) (xy 162.56 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "387beee3-11a7-46e4-a194-95c27f97ce06")
+	)
 	(polyline
 		(pts
 			(xy 163.83 51.816) (xy 165.1 51.816)
@@ -2007,6 +2089,36 @@
 			(type default)
 		)
 		(uuid "3950f45c-d387-40a8-bffe-ea66827981a0")
+	)
+	(wire
+		(pts
+			(xy 162.56 52.07) (xy 162.56 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bb2a216-43c0-4aab-95ba-2e4bc7e56139")
+	)
+	(wire
+		(pts
+			(xy 200.66 53.34) (xy 198.12 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c0ad873-99a4-4931-8362-2e8ac822ac3d")
+	)
+	(wire
+		(pts
+			(xy 198.12 50.8) (xy 198.12 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d0e38e0-363b-40bc-a8e1-c5df2c66b19c")
 	)
 	(polyline
 		(pts
@@ -2020,13 +2132,13 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 60.96) (xy 190.5 54.61)
+			(xy 190.5 91.44) (xy 200.66 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4135f39e-2003-446d-a0a5-c4042f01b997")
+		(uuid "51429afb-5802-43e6-9f31-9411c13a8234")
 	)
 	(polyline
 		(pts
@@ -2050,6 +2162,26 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 52.07) (xy 193.04 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ad20b01-f282-4ffa-992a-6fe897b0947b")
+	)
+	(wire
+		(pts
+			(xy 179.07 57.15) (xy 187.96 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83ed0989-f41a-4bd9-ac56-a9f0f67c013e")
+	)
+	(wire
+		(pts
 			(xy 179.07 59.69) (xy 181.61 59.69)
 		)
 		(stroke
@@ -2068,6 +2200,26 @@
 		)
 		(uuid "8be4ed71-1fa5-4cca-97aa-c4d640bdfcbc")
 	)
+	(wire
+		(pts
+			(xy 222.25 40.64) (xy 234.95 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c5f04ff-e93c-4e03-aa64-060501f1ba93")
+	)
+	(wire
+		(pts
+			(xy 198.12 43.18) (xy 198.12 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cb1c1c8-8355-4964-8767-93bf485bc8b0")
+	)
 	(polyline
 		(pts
 			(xy 163.83 54.356) (xy 165.1 54.356)
@@ -2077,6 +2229,36 @@
 			(type default)
 		)
 		(uuid "90abb15c-7dd9-4359-b9ce-e528f2443a3e")
+	)
+	(wire
+		(pts
+			(xy 190.5 54.61) (xy 190.5 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9441212f-3a44-4408-8684-fdd424b39d8c")
+	)
+	(wire
+		(pts
+			(xy 195.58 48.26) (xy 195.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9863e5d3-5230-4c54-8e1c-cbc738a33311")
+	)
+	(wire
+		(pts
+			(xy 187.96 57.15) (xy 187.96 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bb4e551-b2a3-4c8f-b91c-b23aabaabaf5")
 	)
 	(wire
 		(pts
@@ -2100,13 +2282,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 60.96) (xy 190.5 60.96)
+			(xy 162.56 48.26) (xy 195.58 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c5a3007a-75aa-489f-a723-56183216ee84")
+		(uuid "c6be40cf-ee50-4a5e-bc83-8e1aaffcd2a5")
 	)
 	(wire
 		(pts
@@ -2130,6 +2312,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 40.64) (xy 215.9 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e080a125-b55f-4010-be1f-60cdb577321b")
+	)
+	(wire
+		(pts
 			(xy 179.07 54.61) (xy 190.5 54.61)
 		)
 		(stroke
@@ -2137,6 +2329,16 @@
 			(type default)
 		)
 		(uuid "e09fddd8-3892-49ff-b06f-4a8ccf899290")
+	)
+	(wire
+		(pts
+			(xy 195.58 78.74) (xy 200.66 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e64a527f-9694-4245-b78f-6f4a4b376358")
 	)
 	(symbol
 		(lib_id "Device:Thermistor_NTC")
@@ -2215,6 +2417,88 @@
 			(project "KiCad Schematic"
 				(path "/bf1a3b70-b773-4722-8539-ca95d52f07be"
 					(reference "TH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 222.25 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33a34f90-3391-45eb-ad30-0776952146f7")
+		(property "Reference" "C3"
+			(at 226.06 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nf"
+			(at 226.06 38.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.2152 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 222.25 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fabcd35b-2339-491f-8561-a89ddfbdd920")
+		)
+		(pin "2"
+			(uuid "c87391f6-a48f-49e6-b2cc-f07e21da77e2")
+		)
+		(instances
+			(project "KiCad Schematic"
+				(path "/bf1a3b70-b773-4722-8539-ca95d52f07be"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -2464,7 +2748,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 215.9 48.26 0)
+		(at 215.9 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2475,7 +2759,7 @@
 		(fields_autoplaced yes)
 		(uuid "9992d167-a1ef-4be7-9c20-c076f00a4169")
 		(property "Reference" "#PWR05"
-			(at 215.9 52.07 0)
+			(at 215.9 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2485,8 +2769,8 @@
 				)
 			)
 		)
-		(property "Value" "+3.0V"
-			(at 215.9 43.18 0)
+		(property "Value" "+3.3V"
+			(at 215.9 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2496,7 +2780,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 48.26 0)
+			(at 215.9 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2507,7 +2791,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 48.26 0)
+			(at 215.9 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2518,7 +2802,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 215.9 48.26 0)
+			(at 215.9 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2535,6 +2819,326 @@
 			(project "KiCad Schematic"
 				(path "/bf1a3b70-b773-4722-8539-ca95d52f07be"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 222.25 33.02 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e7f35ac-f269-4907-8e59-4ed021314a6b")
+		(property "Reference" "#PWR07"
+			(at 222.25 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Earth"
+			(at 222.25 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 222.25 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20b18dd9-924a-4e22-9532-18f0281bbb95")
+		)
+		(instances
+			(project "KiCad Schematic"
+				(path "/bf1a3b70-b773-4722-8539-ca95d52f07be"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 198.12 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "befd2ae9-cbd8-4230-addb-6058816676a6")
+		(property "Reference" "R2"
+			(at 200.66 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kOhm"
+			(at 200.66 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.342 46.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 198.12 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "164912c0-d405-4df9-a79d-401b834438b2")
+		)
+		(pin "2"
+			(uuid "75ad3e70-af31-49c7-8a74-d7c0fd28b73f")
+		)
+		(instances
+			(project "KiCad Schematic"
+				(path "/bf1a3b70-b773-4722-8539-ca95d52f07be"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 234.95 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c01eac14-15dc-4a8a-b6f0-d1333480a11c")
+		(property "Reference" "C4"
+			(at 238.76 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10μF"
+			(at 238.76 38.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 235.9152 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 234.95 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1db67a8d-1122-4b6c-a1fa-5d02db33c9a7")
+		)
+		(pin "1"
+			(uuid "efec4e59-a46a-4bfd-84bb-791ff6c7d91d")
+		)
+		(instances
+			(project "KiCad Schematic"
+				(path "/bf1a3b70-b773-4722-8539-ca95d52f07be"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 234.95 33.02 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1e5e764-ed4c-4c2b-8efb-53f924a65a2b")
+		(property "Reference" "#PWR08"
+			(at 234.95 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Earth"
+			(at 234.95 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 234.95 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3342680-da7b-4e0e-a5f0-bac91266ef6f")
+		)
+		(instances
+			(project "KiCad Schematic"
+				(path "/bf1a3b70-b773-4722-8539-ca95d52f07be"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2641,7 +3245,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+3.3V"
 			(at 132.08 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2968,6 +3572,84 @@
 			(project "KiCad Schematic"
 				(path "/bf1a3b70-b773-4722-8539-ca95d52f07be"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 215.9 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef2bf6f7-892f-44a7-8e04-bd72564bec05")
+		(property "Reference" "#PWR06"
+			(at 215.9 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Earth"
+			(at 215.9 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 215.9 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d862489-110a-4798-b52b-b4470d8b19f1")
+		)
+		(instances
+			(project "KiCad Schematic"
+				(path "/bf1a3b70-b773-4722-8539-ca95d52f07be"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
