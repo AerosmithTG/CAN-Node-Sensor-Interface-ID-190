@@ -1860,6 +1860,16 @@
 		)
 		(uuid "8c4e57e5-1abc-46dd-a9cc-ca81b9c4373c")
 	)
+	(text "Microcontroller and CAN Interface (not shown) \nare already installed on the CAN data node, \nonly the connection between the thermistor circuit \nand ADC is shown here, not the full connection to CAN."
+		(exclude_from_sim no)
+		(at 198.374 36.83 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+		)
+		(uuid "8e855526-2ec0-414c-82c2-5f0856955bc5")
+	)
 	(text "Bypassing capacitors to reduce noise from source.\n1μF Tantalum & .1μF Ceramic Monolithic from datasheet.\n"
 		(exclude_from_sim no)
 		(at 148.336 53.086 0)
