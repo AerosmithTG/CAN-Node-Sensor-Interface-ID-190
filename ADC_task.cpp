@@ -1,9 +1,6 @@
 #include "challenge.h"
 #include <cmath>
 
-//Desmos analogy of maths and inputs required for temperature calculations.
-//https://www.desmos.com/calculator/gdqgglfel8
-
 // Runs once a second. read_adc() gives you a number from 0 to 4095.
 bool adc_read(float &temperature_c)
 {
