@@ -1880,6 +1880,16 @@
 		)
 		(uuid "92bc360c-4ff1-49ed-a341-cd60e9a3e47b")
 	)
+	(text "TX goes to J17 pin 9 (RX) for data transmission from microcontroller."
+		(exclude_from_sim no)
+		(at 147.574 39.624 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+		)
+		(uuid "9b25e213-4a4c-41e3-b645-2479c58fbdf6")
+	)
 	(text "1"
 		(exclude_from_sim no)
 		(at 64.262 39.37 0)
@@ -1919,6 +1929,16 @@
 			)
 		)
 		(uuid "dc4812f6-9c12-4a19-b51b-239d0c2eb862")
+	)
+	(text "RX goes to J17 pin 10 (TX) for data incoming from the\nCAN data node (calls to run the temperature function.)"
+		(exclude_from_sim no)
+		(at 144.78 45.466 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+		)
+		(uuid "ec07b313-b90c-4d22-aca1-feac05ae8582")
 	)
 	(text "9"
 		(exclude_from_sim no)
@@ -2160,6 +2180,16 @@
 		)
 		(uuid "681050b7-72c2-43b5-8775-9215ca969bcf")
 	)
+	(wire
+		(pts
+			(xy 129.54 40.64) (xy 142.24 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bb7abcb-8dfc-44ff-8fef-3d460fef8e96")
+	)
 	(polyline
 		(pts
 			(xy 76.2 44.196) (xy 77.47 44.196)
@@ -2269,6 +2299,16 @@
 			(type default)
 		)
 		(uuid "9bb4e551-b2a3-4c8f-b91c-b23aabaabaf5")
+	)
+	(wire
+		(pts
+			(xy 129.54 43.18) (xy 142.24 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7723d8e-27e3-404c-99c4-1a4f87003494")
 	)
 	(wire
 		(pts
