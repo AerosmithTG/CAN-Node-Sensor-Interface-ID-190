@@ -17,6 +17,9 @@ void can_send_temperature(float temperature_c)
     int16_t temperature_10x = temperature_c * 10;
     //Convert to 16 bit signed, split into 2 bytes for payload prep. Frame uses unsigned int, convert signed directly and CAN will change it back?
 
+    uint16_t test = 23;
+    MSM_CAN::pack_u16(frame.data, 2, test)
+    
     //Packing helper for int16_t -> uint8_t (from MSM_CAN.hpp):
     //inline void pack_i16(uint8_t data[8], uint8_t index, int16_t value)
     //{
